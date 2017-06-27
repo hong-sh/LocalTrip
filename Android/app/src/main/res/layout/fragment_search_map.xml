@@ -1,0 +1,87 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.localtrip.jejulocaltrip.view.SearchMapFragment">
+
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        android:src="@drawable/map" />
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="107dp" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="161dp" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="104dp" />
+
+
+        <Button
+            android:id="@+id/button_sugyupo"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:background="@drawable/roundframe_blue_solid"
+            android:text="Sugyupo"
+            android:textAllCaps="false"
+            android:textSize="11dp"
+            app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
+            app:layout_constraintStart_toStartOf="@+id/guideline1"
+            app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+            app:layout_constraintVertical_bias="0.58" />
+
+        <Button
+            android:id="@+id/button_jeju"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:background="@drawable/roundframe_blue_solid"
+            android:text="Jeju"
+            android:textAllCaps="false"
+            android:textSize="11dp"
+            app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+            app:layout_constraintVertical_bias="0.40" />
+
+        <Button
+            android:id="@+id/button_wudo"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:background="@drawable/roundframe_blue_solid"
+            android:text="Wudo"
+            android:textAllCaps="false"
+            android:textSize="11dp"
+            app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
+            app:layout_constraintStart_toStartOf="@+id/guideline4"
+            app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+            app:layout_constraintVertical_bias="0.35" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>

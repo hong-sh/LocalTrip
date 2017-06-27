@@ -1,0 +1,54 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+    package="com.localtrip.jejulocaltrip">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".util.KoreaLocalTripApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="JeJu\nlocaltrip"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".view.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".view.MainActivity"
+            android:theme="@style/AppTheme.Transparent"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustNothing">
+
+        </activity>
+
+        <activity android:name=".view.CourseDetailActivity" />
+
+        <activity android:name=".view.GuideDetailActivity"
+            />
+
+        <activity android:name=".view.SearchActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustNothing"/>
+
+        <activity android:name=".view.WishListActivity" />
+
+        <activity android:name=".view.MyPageActivity" />
+
+        <activity android:name=".view.ReservationActivity" />
+
+        <activity android:name=".view.ReservationListActivity" />
+
+        <activity android:name=".view.LoginActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustNothing"/>
+
+        <activity android:name=".view.JoinActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustNothing"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.localtrip.jejulocaltrip.view.JoinActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorWhite"
+        app:elevation="0dp">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"></android.support.v7.widget.Toolbar>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appBarLayout"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:padding="40dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:text="join"
+            android:textSize="11dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="E-mail"
+            android:textSize="11dp" />
+
+        <EditText
+            android:id="@+id/editText_userEmail"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/editframe_blue_solid"
+            android:inputType="textEmailAddress"
+            android:padding="5dp"
+            android:textSize="11dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Password"
+            android:textSize="11dp" />
+
+        <EditText
+            android:id="@+id/editText_userPass"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/editframe_blue_solid"
+            android:inputType="textPassword"
+            android:padding="5dp"
+            android:textSize="11dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Name"
+            android:textSize="11dp" />
+
+        <EditText
+            android:id="@+id/editText_userName"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/editframe_blue_solid"
+            android:padding="5dp"
+            android:textSize="11dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Phone Number "
+            android:textSize="11dp" />
+
+        <EditText
+            android:id="@+id/editText_userPhone"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/editframe_blue_solid"
+            android:hint="phone number without (-)"
+            android:inputType="number"
+            android:padding="5dp"
+            android:textSize="11dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Language"
+            android:textSize="11dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/editframe_blue_solid"
+            android:padding="1dp">
+
+            <Spinner
+                android:id="@+id/spinner_userLanguage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp">
+
+            </Spinner>
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/button_join"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary"
+            android:text="Join"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="13dp" />
+
+
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

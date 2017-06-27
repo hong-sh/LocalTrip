@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">JeJuLocalTrip</string>
+
+    <!-- MainActivity Str -->
+    <string name="date_select_button_str">Please select a date and language for your trip !</string>
+    <string name="recommend_trip_str">Recommended Trip</string>
+    <string name="recommend_course_str">Recommend course</string>
+    <string name="recommend_guide_str">Recommend guide</string>
+
+    <!-- CourseDetailActivity Str -->
+    <string name="course_info_str">Course Info</string>
+    <string name="course_time_str">Course Spend Time</string>
+    <string name="course_drive_str">Course Drive</string>
+    <string name="course_meeting_location_str">Course Meeting Location</string>
+    <string name="course_meeting_time_str">Course Meeting Time</string>
+    <string name="course_option_str">Course Option</string>
+    <string name="course_nooption_str">Course NoOption</string>
+    <string name="course_etc_str">Course Etc</string>
+    <string name="course_total_review_str">Course Total Review</string>
+    <string name="guide_more_button_str">more guide profile ></string>
+    <string name="reservation_button_str">Reservation</string>
+
+    <string-array name="language">
+        <item>English</item>
+        <item>Korea</item>
+        <item>Chinese (Simplefied)</item>
+        <item>Chinese (Traditional)</item>
+        <item>Japanese</item>
+    </string-array>
+
+    <string name="more_button_str">more ></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

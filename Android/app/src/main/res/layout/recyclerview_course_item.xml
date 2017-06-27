@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="330dp"
+    android:id="@+id/cardView_course">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView_courseImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/layout_userInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.localtrip.jejulocaltrip.util.CircleImageView
+                android:id="@+id/imageView_userImage"
+                android:layout_width="75dp"
+                android:layout_height="75dp">
+
+            </com.localtrip.jejulocaltrip.util.CircleImageView>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:id="@+id/textView_userName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/layout_userInfo"
+            android:orientation="vertical">
+
+
+            <RatingBar
+                android:layout_marginTop="10dp"
+                android:id="@+id/ratingBar_courseRate"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView_courseName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView_coursePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:textSize="13dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/colorLightGray"/>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
